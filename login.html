@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body{
+            background-image:url("back.jpg");
+            background-repeat:repeat;
+			background-size: cover;
+        }
+       form {
+        width:400px;
+		height:300px;
+        background-color:whitesmoke;
+		margin:10px;
+		padding:10px;
+        opacity:0.7;
+        border:10px solid black;
+        box-shadow:5px;
+
+        }
+		input[type=text],input[type=password]{
+		font-size:20px;
+		margin:10px;
+		color:black;
+        border-radius: 2px;
+        border-color: black;
+		}
+		.button{
+		background-color:lime;
+		font-size:20px;
+    
+        padding:2px;
+        margin:5px;
+		}
+		.l{
+		font-size:18px;
+		color:blue;
+		}
+		
+        .register{
+            background-color:BLUE ;
+            color:black;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        button[type=cancel],button[type=submit]
+        {
+            text-align: center;
+        }
+        button[type="cancel"]
+        {
+            background-color: red;
+        }
+        .register a{
+            text-decoration:none ;
+            color:white;
+        }
+        .register{
+            width:300px;
+        }
+        .para{
+            color:rgba(0, 0, 0, 0.49);
+            font-size:18px;
+        }
+        .btn{
+            background-image:linear-gradient(45deg,red,orange);
+            margin-right:100px;
+            
+            
+        }
+        .btn a{
+            text-decoration: none;
+            color:black;
+            font-size: 20px;
+            font-family: 'Times New Roman', Times, serif;
+
+        }
+		
+    </style>
+</head>
+<body>
+    <div>
+        <button class="btn"><a href="n.html" >back</a></button>
+        </div><br>
+    <center>
+    <h1>Login your account</h1>
+    <form method="post" action="login.php">
+        <label for="username" class="l">Username:</label>
+        <input type="text" id="username" name="username" placeholder="enter username"><br>
+        <label for="password" class="l">Password:</label>
+        <input type="password" id="password" name="password" placeholder="password"><br>
+        <button type="submit" class="button">submit</button>
+        <button type="cancel" class="button">cancel</button><br>
+        <p class="para">if you don't have an account create now</p>
+        <button class="register"> <a href="register.html" alt="#">register</button>
+    
+    </center>
+</body>
+</html>
